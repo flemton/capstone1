@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.nav-menu, .nav {
+    display: none;
+}
+
+.hamburger {
+    border: none;
+    background: transparent;
+}
+
+i {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        background: #3e3e3e;
+        padding: 5px;
+        padding-right: 150px;
+        gap: 20px;
+    }
+
+    .nav a {
+        color: white;
+        padding: 2px;
+        text-decoration: none;
+        font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .mobile {
+        display: none;
+    }
+}
