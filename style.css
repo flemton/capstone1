@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+
     margin: 0;
 }
 
@@ -15,6 +15,26 @@ body {
 i {
     color: white;
 }
+
+.program-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    background-color: #dad8d824;
+    margin: 2px;
+    padding-bottom: 0;
+}
+
+.program-grid > i > img {
+    width: 40px;
+    margin-bottom: 12px;
+}
+
+.program-grid header {
+    color: #ff5438;
+}
+
 
 @media (min-width: 768px) {
     .nav {
@@ -57,12 +77,16 @@ line-height: 14px;
         display: flex;
         flex-direction: column;
         background-image: url("./images/headline-bg.png");
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat;
         width: auto;
-        height: 100%;
-        padding: 70px 250px 0 130px;
+        height: 80%;
+        padding: 70px 0 0 160px;
         font-family: 'Lato', sans-serif;
+    }
+
+    .headline-text, .headline-quote, .headline-topic {
+        width: 50vw;
     }
 
     .headline-quote {
@@ -83,6 +107,7 @@ line-height: 14px;
         padding: 15px 10px;
         line-height: 20px;
         gap: 15px;
+        background-color: #F8F8F8;
     }
 
     .venue-time {
@@ -93,6 +118,75 @@ line-height: 14px;
         font-weight: bolder;
         font-size: 20px;
         line-height: 5px;
+    }
+
+    .main-program {
+        display: flex;
+        flex-direction: column;
+        background-image: url("./images/pattern_bg.png");
+        background-repeat: repeat;
+        padding: 70px 50px;
+        font-family: 'Lato', sans-serif;
+        background-color: #282B32;
+        height: 45%;
+        align-items: center;
+        color: white;
+    }
+
+    .main-program h2 {
+        font-weight: lighter;
+        font-size: large;
+        margin: 0;
+    }
+
+    .main-program h3 {
+        font-weight: lighter;
+        font-size: 12px;
+        margin-top: 50px;
+    }
+
+    .red-line {
+        width: 20px;
+        border: 0.1px solid red;
+        margin-bottom: 30px;
+    }
+
+    .main-program-comp {
+        display: flex;
+    }
+
+    .program-grid {
+        display: flex;
+    }
+
+    .program-grid p {
+        font-size: 11px;
+        text-align: center;
+        width: 135px;
+        line-height: 20px;
+    }
+
+    .white-line {
+        width: 157px;
+        border: 0.1px solid white;
+        margin: 0;
+    }
+
+    .featured-speakers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-speakers h2 {
+        margin: 0;
+
+    }
+
+    .speakers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
     .mobile {
