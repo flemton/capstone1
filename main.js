@@ -21,6 +21,7 @@ function myFunction(desktopView) {
   if (desktopView.matches) {
     mobileDrop.style.display = 'none';
     closeBtn.style.display = 'none';
+    menuBtn.style.display = 'none';
   } else {
     menuBtn.style.display = 'block';
     mobileDrop.style.display = 'none';
