@@ -202,10 +202,6 @@ i {
     margin-bottom: 30px;
 }
 
-.main-program-comp {
-    display: flex;
-}
-
 .program-grid p {
     font-size: 12px;
     width: 70%;
@@ -377,6 +373,8 @@ footer {
         background-color: #dad8d824;
         margin: 2px;
         padding-bottom: 0;
+        width: auto;
+        text-align: center;
     }
 
     .nav-menu img {
@@ -515,10 +513,8 @@ line-height: 14px;
 
     .main-program-comp {
         display: flex;
-    }
-
-    .program-grid {
-        display: flex;
+        flex-direction: row;
+        height: auto;
     }
 
     .program-grid p {
