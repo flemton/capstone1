@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,7 +25,7 @@
         <nav class="nav-menu">
             <a href="index.html" class="logo">YiSDC<br>2023</a>
             <div class="desktop">
-                <a href="#about">About</a>
+                <a href="about.html">About</a>
                 <a href="#program">Program</a>
                 <a href="#join">Join</a>
                 <a href="#sponsor">Sponsor</a>
@@ -32,8 +33,19 @@
             </div>
         </nav>
         <a href="#" class="mobile">
-            <img src="./images/hamburger.png" alt="hamburger-icon">
+            <img src="./images/hamburger.png" alt="hamburger-icon" class="menu">
         </a>
+        <div class="menu-drop">
+            <a href="" class="close" id="close"><i class="fa-solid fa-xmark fa-xl"
+                id="icon-close"></i></a>
+            <div>
+                <a href="about.html">About</a>
+                <a href="#program">Program</a>
+                <a href="#join">Join</a>
+                <a href="#sponsor">Sponsor</a>
+                <a href="#campaign" id="campaign">Campaign</a>
+            </div>
+        </div>
     </section>
     <section class="about-headline">
         <div>
@@ -73,9 +85,10 @@ Global Summit 2015 Logo
         <p>
             Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw
         </p>
-        <img src="./images/about_2011.png" alt="About 2011">
-        <img src="./images/about_2013.png" alt="About 2013">
-
+        <div>
+            <img src="./images/about_2011.png" alt="About 2011">
+            <img src="./images/about_2013.png" alt="About 2013">
+        </div>
     </section>
     <footer class="footer">
         <section class="partners">
