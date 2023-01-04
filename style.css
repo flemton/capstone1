@@ -528,6 +528,10 @@ line-height: 14px;
         display: none;
     }
 
+    .main-program h3, .white-line {
+    display: block;
+}
+
     .white-line {
         width: 157px;
         border: 0.1px solid white;
@@ -548,8 +552,29 @@ line-height: 14px;
     .speakers {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 20px;
+        padding: 0 70px;
     }
+
+    .speaker img {
+    width: 30%;
+    height: 100px;
+    }
+
+    .speaker-details {
+        margin-left: 12px;
+    width: 280px;
+    }
+
+    .speaker-name {
+    margin-top: 0;
+}
+
+.speaker-prof {
+    margin: 0 0;
+}
     
     .mobile {
         display: none;
