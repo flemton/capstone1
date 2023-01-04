@@ -48,7 +48,7 @@ const Speakers = [
         },
     },
     {
-        img: './images/speaker_01.png',
+        img: './images/speaker_06.png',
         speakerDetails: {
             speakerName: 'Ryan Merkley',
             speakerProf: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation',
