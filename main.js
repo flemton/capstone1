@@ -3,15 +3,15 @@ const closeBtn = document.querySelector('#close');
 const mobileDrop = document.querySelector('.menu-drop');
 
 function showMenu() {
-  mobileDrop.style.display = 'block';
-  closeBtn.style.display = 'block';
-  menuBtn.style.display = 'none';
+    mobileDrop.style.display = 'block';
+    closeBtn.style.display = 'block';
+    menuBtn.style.display = 'none';
 }
 
 function hideMenu() {
-  menuBtn.style.display = 'block';
-  mobileDrop.style.display = 'none';
-  closeBtn.style.display = 'none';
+    menuBtn.style.display = 'block';
+    mobileDrop.style.display = 'none';
+    closeBtn.style.display = 'none';
 }
 
 menuBtn.addEventListener('click', showMenu);
@@ -22,11 +22,11 @@ function myFunction(desktopView) {
         mobileDrop.style.display = 'none';
         closeBtn.style.display = 'none';
     } else {
-      menuBtn.style.display = 'block';
-      mobileDrop.style.display = 'none';
+        menuBtn.style.display = 'block';
+        mobileDrop.style.display = 'none';
     }
-  }
-  
+}
+
 const desktopView = window.matchMedia('(min-width: 768px)');
 myFunction(desktopView);
 
