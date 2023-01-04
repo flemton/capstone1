@@ -17,6 +17,11 @@ body {
     color: red;
 }
 
+.logo, .logo::after {
+    text-decoration: none;
+    color: red;
+}
+
 .nav, .desktop {
     display: none;
 }
@@ -89,11 +94,32 @@ i {
     font-family: 'Lato', sans-serif;
 }
 
+.about-headline {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/headline-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 94vw;
+    height: 100vw;
+    padding: 7px 10px 0;
+    font-family: 'Lato', sans-serif;
+}
+
 .headline-text, .headline-quote, .headline-topic {
     width: 92%;
 }
 
+.about-headline-quote, .about-headline-topic {
+    width: 98%;
+}
+
 .headline-quote {
+    font-size: 18px;
+    color: #e55656fc;
+}
+
+.about-headline-quote {
     font-size: 18px;
     color: #e55656fc;
 }
@@ -187,8 +213,56 @@ i {
 
 .speakers {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker {
+    display: flex;
+    margin: 0 15px 10px;
+    font-family: 'Lato', sans-serif;
+}
+.speaker img {
+    width: 40%;
+    height: 130px;
+}
+
+.speaker-details {
+    margin-left: 15px;
+
+}
+
+.speaker-name {
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+margin-bottom: 0;
+
+}
+
+.speaker-prof {
+    font-family: Lato;
+font-size: 10px;
+font-weight: 700;
+line-height: 15px;
+text-align: left;
+color: #F78C89;
+
+
+}
+
+.gray-line {
+    width: 15px;
+    align-self: flex-start;
+        margin-left: 0;
+}
+
+.speaker-text {
+font-size: 10px;
+font-weight: 700;
+
+
 }
 
 footer {
@@ -284,8 +358,10 @@ line-height: 14px;
     margin-left: 125px;
     }
 
-    .nav-menu > div > a {
+    .nav-menu > div > a, .nav-menu > div > a::after {
         text-decoration: none;
+        color: #868686;
+        font-size: 14px;
     }
 
     #campaign {
