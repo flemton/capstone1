@@ -9,6 +9,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [📖 Video Description](#vid-desc)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -31,6 +32,9 @@
 # 📖 Conference Page <a name="about-project"></a>
 
 **Conference page** is the first Microverse Capstone at the end of Module 1
+
+## Video Description <a name="vid-desc">
+[Loom video describing project](https://www.loom.com/share/dbb348eeb40e4ac6a567feeb1287a286)
 
 ## 🛠 Built With <a name="built-with"></a>
 
