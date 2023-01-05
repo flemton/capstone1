@@ -333,6 +333,24 @@ i {
   font-weight: 700;
 }
 
+.more-button {
+  display: block;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 8px;
+  width: 88%;
+  margin-bottom: 30px;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+}
+
+#speaker3,
+#speaker4,
+#speaker5,
+#speaker6 {
+  display: none;
+}
+
 .past {
   display: flex;
   flex-direction: column;
@@ -370,11 +388,14 @@ footer {
 }
 
 .partners {
+  display: flex;
   text-align: center;
-  color: #8f8f91;
+  color: rgb(143, 143, 145);
   font-size: 25px;
-  background-color: #414246;
+  background-color: rgb(65, 66, 70);
   width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .partners h3 {
@@ -391,7 +412,7 @@ footer {
   justify-content: center;
   flex-flow: wrap;
   gap: 45px;
-  margin-bottom: 15px;
+  margin: 10px 5px;
   align-items: center;
 }
 
@@ -682,10 +703,8 @@ footer {
   }
 
   .speakers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     margin-bottom: 20px;
     padding: 0 15%;
   }
@@ -701,6 +720,17 @@ footer {
 
   .speaker-prof {
     margin: 0 0;
+  }
+
+  .more-button {
+    display: none;
+  }
+
+  #speaker3,
+  #speaker4,
+  #speaker5,
+  #speaker6 {
+    display: flex;
   }
 
   .past div {

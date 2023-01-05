@@ -3,6 +3,7 @@ speakers.className = 'speakers';
 
 const Speakers = [
   {
+    class: 'less-speaker',
     img: './images/speaker_01.png',
     speakerDetails: {
       speakerName: 'Yochai Benkler',
@@ -12,6 +13,7 @@ const Speakers = [
     },
   },
   {
+    class: 'less-speaker',
     img: './images/speaker_02.png',
     speakerDetails: {
       speakerName: 'SohYeong Noh',
@@ -21,6 +23,7 @@ const Speakers = [
     },
   },
   {
+    class: 'speaker3',
     img: './images/speaker_03.png',
     speakerDetails: {
       speakerName: 'Lila Tretikov',
@@ -30,6 +33,7 @@ const Speakers = [
     },
   },
   {
+    class: 'speaker4',
     img: './images/speaker_04.png',
     speakerDetails: {
       speakerName: 'Kilnam Chon',
@@ -39,6 +43,7 @@ const Speakers = [
     },
   },
   {
+    class: 'speaker5',
     img: './images/speaker_05.png',
     speakerDetails: {
       speakerName: 'Julia Leda',
@@ -48,6 +53,7 @@ const Speakers = [
     },
   },
   {
+    class: 'speaker6',
     img: './images/speaker_06.png',
     speakerDetails: {
       speakerName: 'Ryan Merkley',
@@ -60,7 +66,7 @@ const Speakers = [
 
 Speakers.forEach((Speakers) => {
   const content = `
-    <span class="speaker">
+    <span class="speaker" id="${Speakers.class}">
         <img src="${Speakers.img}" alt="Speaker Picture">
         <div class="speaker-details">
             <p class="speaker-name">${Speakers.speakerDetails.speakerName}</p>
@@ -73,4 +79,24 @@ Speakers.forEach((Speakers) => {
   speakers.innerHTML += content;
 });
 
+const moreButton = document.createElement('button');
+moreButton.className = 'more-button';
+moreButton.innerHTML = 'MORE <img src="./images/arrow_down.png" alt="Down Arrow">';
+
 document.body.insertBefore(speakers, document.body.children[4]);
+speakers.insertBefore(moreButton, speakers.children[2]);
+
+const showSpeaker3 = document.getElementById('speaker3');
+const showSpeaker4 = document.getElementById('speaker4');
+const showSpeaker5 = document.getElementById('speaker5');
+const showSpeaker6 = document.getElementById('speaker6');
+
+function moreSpeakers() {
+  showSpeaker3.style.display = 'flex';
+  showSpeaker4.style.display = 'flex';
+  showSpeaker5.style.display = 'flex';
+  showSpeaker6.style.display = 'flex';
+  moreButton.style.display = 'none';
+}
+
+moreButton.addEventListener('click', moreSpeakers);
